@@ -15,7 +15,7 @@ export default function MenuItem({item}){
     }
 
 
-    return <li >
+    return <li > 
         <div className="menu-item">
             <p>{item.label}</p>
         </div>

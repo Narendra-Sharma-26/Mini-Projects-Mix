@@ -18,7 +18,7 @@ export default function LoadMoreData() {
 
 
             if (result && result.products && result.products.length) {
-                setproducts((prevData)=> [...prevData, ...result.products])
+                setproducts((prevData) => [...prevData, ...result.products])
                 setloading(false)
             }
 
@@ -33,9 +33,9 @@ export default function LoadMoreData() {
         fetchProducts()
     }, [count])
 
-    useEffect(()=>{
-        if(products && products.length === 100) setdisableButton(true)
-    },[products])
+    useEffect(() => {
+        if (products && products.length === 100) setdisableButton(true)
+    }, [products])
 
     if (loading) {
         return <div>Loading Data !!! Please Wait</div>
@@ -54,7 +54,7 @@ export default function LoadMoreData() {
                     : null}
         </div>
         <div className="button-container">
-            <button disabled={disableButton} onClick={()=> setcount(count + 1)}>Load More Products
+            <button disabled={disableButton} onClick={() => setcount(count + 1)}>Load More Products
             </button>
             {
                 disableButton ? <p>You have reached to 100 products</p> : null

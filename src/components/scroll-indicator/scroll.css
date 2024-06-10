@@ -16,7 +16,7 @@
 .current-progress-bar {
     height: 10px;
     background: #ddfe04;
-    width: 0%;
+    /* width: 0%; */
 }
 
 .data-container {

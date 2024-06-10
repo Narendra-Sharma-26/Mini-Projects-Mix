@@ -12,6 +12,7 @@ import ScrollIndicator from './components/scroll-indicator';
 import StarRating from './components/start-rating';
 import TreeView from './components/tree-view';
 import menus from './components/tree-view/data';
+import GithubProfileFinder from './components/github-profile-finder';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
 
       {/* <StarRating noOfStars={10}/> */}
 
-      {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={'1'} limit={'10'}/> */}
+      {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={'2'} limit={'10'}/> */}
 
       {/* <LoadMoreData /> */}
 
@@ -36,7 +37,9 @@ function App() {
 
       {/* <TabTest /> */}
 
-      <ModalTest />
+      {/* <ModalTest /> */}
+
+      <GithubProfileFinder />
 
 
     </div>
